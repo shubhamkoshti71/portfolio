@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Charset -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page -->
+    <title>Shubham Koshti - Data Analyst Portfolio</title>
+
+    <!-- Meta description (appears in search results) -->
+    <meta name="description"
+        content="Explore the portfolio of Shubham Koshti, an experienced Data Analyst specializing in data science, statistical modeling, and data visualization. Skills include Python, SQL, Tableau, and PowerBI.">
+
+    <!-- Keywords for SEO -->
+    <meta name="keywords"
+        content="Data Analyst Portfolio, Data Science, Data Visualization, Python, SQL, Tableau, PowerBI, Dash Plotly, Machine Learning, Statistical Modeling, Business Intelligence">
+
+    <!-- Author metadata -->
+    <meta name="author" content="Shubham Koshti">
+
+    <!-- Open Graph metadata for social media -->
+    <meta property="og:title" content="Data Analyst Portfolio | Shubham Koshti">
+    <meta property="og:description"
+        content="Showcasing projects in data science, machine learning, and business intelligence using tools like Python, R, Tableau, and SQL.">
+    <meta property="og:image" content="/img/profile-pic.jpeg">
+    <!-- <meta property="og:url" content="[Your Portfolio URL]"> -->
+    <meta property="og:type" content="website">
+
+    <!-- Twitter metadata for social media -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Data Analyst Portfolio | Shubham Koshti">
+    <meta name="twitter:description"
+        content="Explore my data analytics projects showcasing skills in Python, SQL, Tableau, and more.">
+    <meta name="twitter:image" content="/img/profile-pic.jpeg">
+
+    <!-- Structured data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Shubham Koshti",
+      "jobTitle": "Data Analyst",
+      "description": "Experienced Data Analyst with a focus on data science, visualization, and business intelligence using Python, SQL, and Tableau.",
+      "url": "[Portfolio URL]",
+      "sameAs": [
+        "https://www.linkedin.com/in/shubham-koshti",
+        "https://www.github.com/shubhamkoshti71",
+        "https://x.com/ShubhamKoshti98",
+        "https://www.instagram.com/_shubhamkoshti_"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Syracuse University",
+        "sameAs": "https://www.syracuse.edu/"
+      },
+      "knowsAbout": [
+        "Python",
+        "SQL",
+        "Data Visualization",
+        "Business Intelligence",
+        "Tableau",
+        "PowerBI",
+        "Machine Learning",
+        "Excel"
+      ],
+      "workExample": [
+        {
+          "@type": "CreativeWork",
+          "name": "Sales Performance Dashboard",
+          "description": "Developed a Tableau dashboard to track and analyze sales performance metrics, providing insights into customer trends.",
+          "url": "[Project URL or GitHub Link]"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Marketing Campaign Analysis",
+          "description": "Performed statistical analysis and A/B testing on marketing campaigns to evaluate effectiveness and improve targeting.",
+          "url": "[Project URL or GitHub Link]"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="[Favicon URL]" type="image/x-icon">
+
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS CDN CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+
+</head>
+
+<body>
+
+    <section class="header_section section" id='home'>
+
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifiations">Certifiations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="header_content">
+            <div class="client_info">
+                <h2 class='name'>Shubham Koshti</h2>
+                <h1 class='titles'>I am a <span id="typed-output"></span></h1>
+                <p class='description'>Data enthusiast passionate about uncovering insights and crafting solutions, with
+                    a love for travel, nature, and Lawn Tennis.</p>
+                <ul class="icons">
+                    <li><a href="https://www.github.com/shubhamkoshti71" target="_blank"><i
+                                class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/_shubhamkoshti_" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://x.com/ShubhamKoshti98" target="_blank"><i
+                                class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/shubham-koshti" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about_section section" id='about'>
+        <h2 class='section-title'>About Me</h2>
+        <div class="about_container">
+            <div class="about_image">
+                <img src="img/profile-pic.jpeg" alt="Your Name" />
+            </div>
+
+            <div class="about_content">
+                <!-- Tab Buttons -->
+                <div class="tabs">
+                    <button class="tab-link active" onclick="openTab(event, 'experience')">Professional
+                        Experience</button>
+                    <button class="tab-link" onclick="openTab(event, 'interests')">My Interests</button>
+                </div>
+
+                <!-- Tab Content -->
+                <div id="experience" class="tab-content active">
+                    <h3>Professional Experience</h3>
+                    <p>Hey there! I’m a data enthusiast with over 2 years of experience in turning raw data into
+                        insights that make a real impact. I’m skilled in SQL, Python, and Tableau, and I love building
+                        dashboards and automated models that not only boost productivity but also help drive smart
+                        business decisions. I’m all about diving into data to reveal meaningful insights, crafting
+                        solutions that tackle big challenges, and collaborating with diverse teams to bring out the best
+                        in every project.</p>
+                </div>
+
+                <div id="interests" class="tab-content">
+                    <h3>My Interests</h3>
+                    <p>I live to travel, especially hiking up to those incredible views at the top. Long drives and
+                        spending time in nature are my favorite ways to unwind. When I’m not out exploring, you’ll
+                        probably find me playing FIFA with friends. I like to think I’m pretty good at it—who knows,
+                        maybe I’ll go pro in esports if I ever get tired of tech (just kidding!). And of course, I love
+                        playing Lawn Tennis. I admire Roger Federer for his elegance on the court—there’s so much to
+                        learn from him!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section section" id='skills'>
+        <h2 class='section-title'>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <i class="fas fa-chart-line"></i>
+                <p>Tableau</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-database"></i>
+                <p>Azure Databricks</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-project-diagram"></i>
+                <p>Dash Plotly</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-chart-pie"></i>
+                <p>PowerBI</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-code"></i>
+                <p>R</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-database"></i>
+                <p>SQL</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-java"></i>
+                <p>Java</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-laptop-code"></i>
+                <p>C++</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-stream"></i>
+                <p>Apache Airflow</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-cogs"></i>
+                <p>ServiceNow</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-cloud"></i>
+                <p>Kubernetes</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-file-excel"></i>
+                <p>Microsoft Excel</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-desktop"></i>
+                <p>MS Office</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-database"></i>
+                <p>Azure Data Studio</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-server"></i>
+                <p>PostgreSQL</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-docker"></i>
+                <p>Docker</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-microsoft"></i>
+                <p>PowerApps</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-aws"></i>
+                <p>AWS (Lambda, EC2, S3)</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-microsoft"></i>
+                <p>Azure</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-cloud"></i>
+                <p>Salesforce CRM</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-section section" id='experience'>
+        <h2 class="section-title">My Journey</h2>
+
+        <div class="timeline">
+            <!-- Experience 1: iConsult Collaborative -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-date">Nov 2023 - Jul 2024</h3>
+                    <h4>Research Data Analyst | iConsult Collaborative | Syracuse, NY</h4>
+                </div>
+            </div>
+
+            <!-- Education 1: Syracuse University -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-date">Aug 2022 - May 2024</h3>
+                    <h4>Syracuse University | Master of Science, Information Systems | Syracuse, NY</h4>
+                </div>
+            </div>
+
+            <!-- Experience 2: Infosys Limited -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-date">Nov 2020 - Apr 2022</h3>
+                    <h4>Data Analyst | Infosys Limited | Pune, India</h4>
+                </div>
+            </div>
+
+            <!-- Experience 3: Northway Motorsports -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-date">Nov 2019 - May 2020</h3>
+                    <h4>Data Science Intern | Northway Motorsports | Pune, India</h4>
+                </div>
+            </div>
+
+            <!-- Education 2: Pune University -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-date">August 2016 – May 2020</h3>
+                    <h4>Pune University | Bachelor of Technology, Computer Science | Pune, India</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section section" id='projects'>
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="https://placehold.co/600x400" alt="Project Image" class="project-image">
+                <h3 class="project-title">Analyzing Healthcare information via HMO</h3>
+                <ul class="project-details">
+                    <li>Analysis and prediction of the healthcare costs of patients availing the services of a Health
+                        Management Organization.</li>
+                </ul>
+                <div class="tech-icons">
+                    <i class="fab fa-python"></i>
+                    <i class="fab fa-dashcube"></i>
+                    <i class="fab fa-tableau"></i>
+                </div>
+                <button class="view-code-btn"><a href="#" target="_blank">View Code</a></button>
+            </div>
+
+            <div class="project-card">
+                <img src="https://placehold.co/600x400" alt="Project Image" class="project-image">
+                <h3 class="project-title">Cryptocurrency Data Pipeline Automation</h3>
+                <ul class="project-details">
+                    <li>Working demo of automated ETL pipeline for storing cryptocurrency stock data using Apache
+                        Airflow, DAGs and AWS S3 storage.</li>
+                </ul>
+                <div class="tech-icons">
+                    <i class="fab fa-python"></i>
+                    <i class="fab fa-salesforce"></i>
+                    <i class="fab fa-postman"></i>
+                </div>
+                <button class="view-code-btn"><a href="#" target="_blank">View Code</a></button>
+            </div>
+
+            <div class="project-card">
+                <img src="https://placehold.co/600x400" alt="Project Image" class="project-image">
+                <h3 class="project-title">Predictive Employee Attrition and Analysis</h3>
+                <ul class="project-details">
+                    <li>Development of a probability model to analyze and predict employee attrition, presenting
+                        findings and recommending strategies to reduce the current attrition rate.</li>
+                </ul>
+                <div class="tech-icons">
+                    <i class="fab fa-python"></i>
+                    <i class="fas fa-car"></i>
+                </div>
+                <button class="view-code-btn"><a href="#" target="_blank">View Code</a></button>
+            </div>
+
+            <div class="project-card">
+                <img src="https://placehold.co/600x400" alt="Project Image" class="project-image">
+                <h3 class="project-title">Environmental Monitoring: Telemetry Data Analysis</h3>
+                <ul class="project-details">
+                    <li>Comprehensive analysis of environmental telemetry data collected from various devices using
+                        Python and SQL. Gained insights into various environmental factors.</li>
+                </ul>
+                <div class="tech-icons">
+                    <i class="fab fa-dashcube"></i>
+                    <i class="fab fa-tableau"></i>
+                </div>
+                <button class="view-code-btn"><a href="#" target="_blank">View Code</a></button>
+            </div>
+
+            <div class="project-card">
+                <img src="https://placehold.co/600x400" alt="Project Image" class="project-image">
+                <h3 class="project-title">Adidas Sales and Profitability Analysis</h3>
+                <ul class="project-details">
+                    <li>Extensive analysis of Adidas’ sales and profitability across different regions, sales methods,
+                        and product categories.</li>
+                    <li>Offers insights into the factors affecting sales performance and operational efficiency for
+                        Adidas products.</li>
+                </ul>
+                <div class="tech-icons">
+                    <i class="fab fa-dashcube"></i>
+                    <i class="fab fa-tableau"></i>
+                </div>
+                <button class="view-code-btn"><a href="#" target="_blank">View Code</a></button>
+            </div>
+
+            <div class="project-card">
+                <img src="https://placehold.co/600x400" alt="Project Image" class="project-image">
+                <h3 class="project-title">Gestational Diabetes Early Prediction</h3>
+                <ul class="project-details">
+                    <li>A ML based solution in collaboration with Fetal Life to identify high-risk cases of gestational
+                        diabetes early in pregnancy, enabling timely interventions.</li>
+                </ul>
+                <div class="tech-icons">
+                    <i class="fab fa-dashcube"></i>
+                    <i class="fab fa-tableau"></i>
+                </div>
+                <button class="view-code-btn"><a href="#" target="_blank">View Code</a></button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="certifiations-section section" id='certifiations'>
+        <h2 class="section-title">Certifiations</h2>
+        <div class="certifiations-grid">
+
+            <div class="certifiation-card">
+                <img src="https://placehold.co/600x400" alt="certifiation Image" class="certifiation-image">
+                <h3 class="certifiation-title">Analyzing Healthcare information via HMO</h3>
+                <div class="certifiation-date"> 19-Jan-2021 </div>
+            </div>
+            <div class="certifiation-card">
+                <img src="https://placehold.co/600x400" alt="certifiation Image" class="certifiation-image">
+                <h3 class="certifiation-title">Analyzing Healthcare information via HMO</h3>
+                <div class="certifiation-date"> 19-Jan-2021 </div>
+            </div>
+            <div class="certifiation-card">
+                <img src="https://placehold.co/600x400" alt="certifiation Image" class="certifiation-image">
+                <h3 class="certifiation-title">Analyzing Healthcare information via HMO</h3>
+                <div class="certifiation-date"> 19-Jan-2021 </div>
+            </div>
+            <div class="certifiation-card">
+                <img src="https://placehold.co/600x400" alt="certifiation Image" class="certifiation-image">
+                <h3 class="certifiation-title">Analyzing Healthcare information via HMO</h3>
+                <div class="certifiation-date"> 19-Jan-2021 </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact-section section" id='contact'>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-card">
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+1 315-952-7490</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>srkoshti98@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>New York, USA</span>
+                </div>
+                <a href="mailto:srkoshti98@gmail.com" class="contact-btn" target="_blank">Email Me</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="pictures-section section">
+
+        <h2 class="section-title">Life's Good</h2>
+
+        <div class="carousel">
+            <div class="carousel-track">
+                <!-- First set of images -->
+                <div class="image-card tilt-left">
+                    <img src="img/slider-1.jpeg" alt="Trip Image 1">
+                    <div class="image-description">
+                        <p>Trip to Paris</p>
+                        <p>Summer 2024</p>
+                    </div>
+                </div>
+                <div class="image-card tilt-right">
+                    <img src="img/slider-2.jpeg" alt="Trip Image 2">
+                    <div class="image-description">
+                        <p>New York City</p>
+                        <p>Winter 2023</p>
+                    </div>
+                </div>
+                <div class="image-card tilt-left">
+                    <img src="img/slider-3.jpeg" alt="Trip Image 3">
+                    <div class="image-description">
+                        <p>Tokyo Adventures</p>
+                        <p>Spring 2023</p>
+                    </div>
+                </div>
+                <div class="image-card tilt-right">
+                    <img src="img/slider-4.jpeg" alt="Trip Image 2">
+                    <div class="image-description">
+                        <p>New York City</p>
+                        <p>Winter 2023</p>
+                    </div>
+                </div>
+                <div class="image-card tilt-left">
+                    <img src="img/slider-5.jpeg" alt="Trip Image 3">
+                    <div class="image-description">
+                        <p>Tokyo Adventures</p>
+                        <p>Spring 2023</p>
+                    </div>
+                </div>
+                <!-- Add more image cards as needed -->
+
+                <!-- Duplicate the images for infinite scroll effect -->
+                <div class="image-card tilt-right">
+                    <img src="img/slider-1.jpeg" alt="Trip Image 1">
+                    <div class="image-description">
+                        <p>Trip to Paris</p>
+                        <p>Summer 2024</p>
+                    </div>
+                </div>
+                <div class="image-card tilt-left">
+                    <img src="img/slider-2.jpeg" alt="Trip Image 2">
+                    <div class="image-description">
+                        <p>New York City</p>
+                        <p>Winter 2023</p>
+                    </div>
+                </div>
+                <div class="image-card tilt-right">
+                    <img src="img/slider-3.jpeg" alt="Trip Image 3">
+                    <div class="image-description">
+                        <p>Tokyo Adventures</p>
+                        <p>Spring 2023</p>
+                    </div>
+                </div>
+                <div class="image-card tilt-left">
+                    <img src="img/slider-4.jpeg" alt="Trip Image 2">
+                    <div class="image-description">
+                        <p>New York City</p>
+                        <p>Winter 2023</p>
+                    </div>
+                </div>
+                <div class="image-card tilt-right">
+                    <img src="img/slider-5.jpeg" alt="Trip Image 3">
+                    <div class="image-description">
+                        <p>Tokyo Adventures</p>
+                        <p>Spring 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+</body>
+
+<!-- FONTAWESOME JS-->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script src="script.js"></script>
+
+</html>
