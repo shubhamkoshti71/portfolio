@@ -216,6 +216,35 @@ nav {
     color: var(--color-secondary)
 }
 
+.resume-btn {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.resume-btn > a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.resume-btn:hover {
+    background-color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+
+    .resume-btn {
+        font-size: 0.8rem;
+    }
+}
+
 @media (max-width: 1100px) {
     .bars {
         display: block;
@@ -658,58 +687,51 @@ nav {
     margin: 0 auto;
 }
 
-.certifiations-grid {
+.certifications-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-.certifiation-image {
+.certification-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.certification-image {
+    aspect-ratio: 1;
     width: 100%;
     height: auto;
-    border-radius: 8px 8px 0 0;
     object-fit: cover;
-    margin-bottom: var(--space-medium);
-}
-
-.certifiation-card {
-    background-color: transparent;
     border-radius: 8px;
-    padding: 20px;
-    border: 1px solid var(--color-primary);
+    transition: transform 0.3s ease-in-out;
 }
 
-.certifiation-title {
-    font-size: 1.4rem;
-    color: var(--color-secondary);
-    margin-bottom: 15px;
+.certification-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.certifiation-date {
-    padding: 0;
-    font-size: 0.9rem;
-    color: var(--color-primary);
+.certification-card:hover .certification-image {
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
-
-    .certifiations-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .certifiation-card {
-        margin: 0px auto;
-        width:90%;
-    }
-
-    .certifiation-title {
-        font-size: 1.2rem;
-    }
-
-    .certifiation-date {
-        font-size: 0.85rem;
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
 
 /* section 7 */
 
