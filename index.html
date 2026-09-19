@@ -18,33 +18,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title of the page -->
-    <title>Shubham Koshti - Portfolio</title>
+    <title>Shubham Koshti | Data Engineer &amp; Analytics Engineer</title>
 
     <!-- Meta description (appears in search results) -->
     <meta name="description"
-        content="Explore the portfolio of Shubham Koshti, an experienced Data Analyst specializing in data science, statistical modeling, and data visualization. Skills include Python, SQL, Tableau, and PowerBI.">
+        content="Shubham Koshti is a Data Engineer and Analytics Engineer who builds governed data pipelines and data products with Snowflake, Databricks, dbt and Dagster.">
 
     <!-- Keywords for SEO -->
     <meta name="keywords"
-        content="Data Analyst Portfolio, Data Science, Data Visualization, Python, SQL, Tableau, PowerBI, Dash Plotly, Machine Learning, Statistical Modeling, Business Intelligence">
+        content="Data Engineer, Analytics Engineer, Data Pipelines, Data Products, Snowflake, Databricks, dbt, Dagster, Apache Airflow, SQL, Python, Data Governance, Portfolio">
 
     <!-- Author metadata -->
     <meta name="author" content="Shubham Koshti">
 
     <!-- Open Graph metadata for social media -->
-    <meta property="og:title" content="Portfolio | Shubham Koshti">
+    <meta property="og:title" content="Shubham Koshti | Data Engineer &amp; Analytics Engineer">
     <meta property="og:description"
-        content="Showcasing projects in data science, machine learning, and business intelligence using tools like Python, R, Tableau, and SQL.">
-    <meta property="og:image" content="/img/profile-pic.jpeg">
-    <!-- <meta property="og:url" content="[Your Portfolio URL]"> -->
+        content="I build and own the data pipelines that unify fragmented source-system data into governed, analytics-ready data products.">
+    <meta property="og:image" content="https://shubhamkoshti71.github.io/portfolio/img/profile-pic.jpeg">
+    <meta property="og:image:alt" content="Portrait of Shubham Koshti">
+    <meta property="og:url" content="https://shubhamkoshti71.github.io/portfolio/">
+    <meta property="og:site_name" content="Shubham Koshti">
     <meta property="og:type" content="website">
 
     <!-- Twitter metadata for social media -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Data Analyst Portfolio | Shubham Koshti">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Shubham Koshti | Data Engineer &amp; Analytics Engineer">
     <meta name="twitter:description"
-        content="Explore my data analytics projects showcasing skills in Python, SQL, Tableau, and more.">
-    <meta name="twitter:image" content="/img/profile-pic.jpeg">
+        content="I build and own the data pipelines that unify fragmented source-system data into governed, analytics-ready data products.">
+    <meta name="twitter:image" content="https://shubhamkoshti71.github.io/portfolio/img/profile-pic.jpeg">
+    <meta name="twitter:image:alt" content="Portrait of Shubham Koshti">
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -55,9 +58,14 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Shubham Koshti",
-      "jobTitle": "Data Analyst",
-      "description": "Experienced Data Analyst with a focus on data science, visualization, and business intelligence using Python, SQL, and Tableau.",
-      "url": "[Portfolio URL]",
+      "jobTitle": "Data Analytics Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Quantegy Analytics"
+      },
+      "description": "Data Engineer and Analytics Engineer who builds and owns data pipelines and ships governed data products with Snowflake, Databricks, dbt and Dagster.",
+      "url": "https://shubhamkoshti71.github.io/portfolio/",
+      "image": "https://shubhamkoshti71.github.io/portfolio/img/profile-pic.jpeg",
       "sameAs": [
         "https://www.linkedin.com/in/shubham-koshti",
         "https://www.github.com/shubhamkoshti71",
@@ -70,34 +78,43 @@
         "sameAs": "https://www.syracuse.edu/"
       },
       "knowsAbout": [
-        "Python",
+        "Data Engineering",
+        "Analytics Engineering",
+        "Data Pipelines",
+        "Snowflake",
+        "Databricks",
+        "dbt",
+        "Dagster",
+        "Apache Airflow",
         "SQL",
-        "Data Visualization",
-        "Business Intelligence",
+        "Python",
+        "Streamlit",
         "Tableau",
-        "PowerBI",
-        "Machine Learning",
-        "Excel"
+        "CI/CD"
       ],
       "workExample": [
         {
           "@type": "CreativeWork",
-          "name": "Sales Performance Dashboard",
-          "description": "Developed a Tableau dashboard to track and analyze sales performance metrics, providing insights into customer trends.",
-          "url": "[Project URL or GitHub Link]"
+          "name": "FEMA Disaster Analysis: End-to-End Pipeline",
+          "description": "Pipeline that ingests three FEMA disaster APIs with Apache Airflow into Azure Blob Storage, transforms the data in Databricks and serves Tableau dashboards.",
+          "url": "https://github.com/shubhamkoshti71/data-pipeline-FEMA-analysis_and_visualization"
         },
         {
           "@type": "CreativeWork",
-          "name": "Marketing Campaign Analysis",
-          "description": "Performed statistical analysis and A/B testing on marketing campaigns to evaluate effectiveness and improve targeting.",
-          "url": "[Project URL or GitHub Link]"
+          "name": "Adidas Sales and Profitability Analysis",
+          "description": "Interactive Tableau analysis of Adidas sales and operating profit across US regions, sales methods and product categories.",
+          "url": "https://github.com/shubhamkoshti71/adidas_US_sales_profitability_analysis"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Gestational Diabetes Risk Classification",
+          "description": "Machine learning models that classify gestational diabetes risk, built with the startup Fetal Life.",
+          "url": "https://github.com/shubhamkoshti71/gestational_diabetes_prediction"
         }
       ]
     }
     </script>
 
-    <!-- Favicon -->
-    <link rel="icon" href="[Favicon URL]" type="image/x-icon">
 
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <link rel="stylesheet" href="styles.css">
@@ -146,7 +163,7 @@
                 <p class="hero-eyebrow">Hello, I'm</p>
                 <h2 class='name'>Shubham Koshti</h2>
                 <h1 class='titles'>I am a <span id="typed-output"></span></h1>
-                <p class='description'>Experienced in building production-grade pipelines and unified BI platforms across Snowflake, Databricks, and BigQuery — and occasionally chasing a good backhand on the tennis court.</p>
+                <p class='description'>Experienced in building production-grade pipelines that unify fragmented source-system data into governed data products across Snowflake, Databricks, and BigQuery — and occasionally chasing a good backhand on the tennis court.</p>
 
                 <div class="hero-actions">
                     <a class="btn btn-primary" href="#projects">View Projects</a>
