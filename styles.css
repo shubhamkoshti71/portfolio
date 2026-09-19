@@ -2136,11 +2136,13 @@ a.contact-tile:hover {
 .tilt-right { --tilt: 4deg; }
 
 /* Stagger the cards vertically so the wall feels less rigid.
-   Period matches the 5 cards per set so the duplicated set lines up. */
-.image-card:nth-child(5n + 2) { margin-top: 26px; }
-.image-card:nth-child(5n + 3) { margin-top: 10px; }
-.image-card:nth-child(5n + 4) { margin-top: 32px; }
-.image-card:nth-child(5n + 5) { margin-top: 14px; }
+   The period matches the 6 cards per set (the 6th is hidden until its photo is added),
+   so the duplicated set lines up and the loop stays seamless. */
+.image-card:nth-child(6n + 2) { margin-top: 26px; }
+.image-card:nth-child(6n + 3) { margin-top: 10px; }
+.image-card:nth-child(6n + 4) { margin-top: 32px; }
+.image-card:nth-child(6n + 5) { margin-top: 14px; }
+.image-card:nth-child(6n + 6) { margin-top: 24px; }
 
 .image-card img {
     display: block;
