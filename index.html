@@ -105,8 +105,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- AOS CDN CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <!-- Typed.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
 
 </head>
 
@@ -134,7 +132,8 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#exp">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifiations">Certifiations</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="bars">
@@ -144,23 +143,49 @@
 
         <div class="header_content">
             <div class="client_info">
+                <p class="hero-eyebrow">Hello, I'm</p>
                 <h2 class='name'>Shubham Koshti</h2>
                 <h1 class='titles'>I am a <span id="typed-output"></span></h1>
-                <p class='description'>Data enthusiast passionate about uncovering insights and crafting solutions, with
-                    a love for travel, nature, and Lawn Tennis.</p>
+                <p class='description'>Experienced in building production-grade pipelines and unified BI platforms across Snowflake, Databricks, and BigQuery — and occasionally chasing a good backhand on the tennis court.</p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects">View Projects</a>
+                    <a class="btn btn-outline" href="ShubhamK_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+                </div>
+
                 <ul class="icons">
-                    <li><a href="https://www.github.com/shubhamkoshti71" target="_blank"><i
+                    <li><a href="https://www.github.com/shubhamkoshti71" target="_blank" rel="noopener" aria-label="GitHub"><i
                                 class="fa-brands fa-github"></i></a></li>
-                    <li><a href="https://www.instagram.com/_shubhamkoshti_" target="_blank"><i
+                    <li><a href="https://www.instagram.com/_shubhamkoshti_" target="_blank" rel="noopener" aria-label="Instagram"><i
                                 class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://x.com/ShubhamKoshti98" target="_blank"><i
+                    <li><a href="https://x.com/ShubhamKoshti98" target="_blank" rel="noopener" aria-label="X"><i
                                 class="fa-brands fa-x-twitter"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/shubham-koshti" target="_blank"><i
+                    <li><a href="https://www.linkedin.com/in/shubham-koshti" target="_blank" rel="noopener" aria-label="LinkedIn"><i
                                 class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
+            </div>
 
-                <button class="resume-btn"><a href="https://shubhamkoshti71.github.io/portfolio/SKresume.pdf" target="_blank">Resume</a></button>
-
+            <div class="hero_visual">
+                <div class="code-card" role="img" aria-label="Shubham Koshti works as a Data Engineer, an Analytics Engineer and a Developer">
+                    <div class="code-card-bar">
+                        <span class="code-dots"><i></i><i></i><i></i></span>
+                        <span class="code-file">shubham.sql</span>
+                    </div>
+                    <div class="code-body" aria-hidden="true">
+                        <span class="code-line" style="--n:24;--d:0.60s;--t:0.48s"><span class="ln">1</span><span class="code-text"><span class="tk-com">-- one person, many hats</span></span></span>
+                        <span class="code-line" style="--n:12;--d:1.20s;--t:0.24s"><span class="ln">2</span><span class="code-text"><span class="tk-kw">SELECT</span> <span class="tk-id">role</span><span class="tk-pun">,</span></span></span>
+                        <span class="code-line" style="--n:12;--d:1.56s;--t:0.24s"><span class="ln">3</span><span class="code-text">       <span class="tk-id">tools</span></span></span>
+                        <span class="code-line" style="--n:19;--d:1.92s;--t:0.38s"><span class="ln">4</span><span class="code-text"><span class="tk-kw">FROM</span>   <span class="tk-id">shubham.hats</span></span></span>
+                        <span class="code-line" style="--n:21;--d:2.42s;--t:0.42s"><span class="ln">5</span><span class="code-text"><span class="tk-kw">WHERE</span>  <span class="tk-id">active</span><span class="tk-pun"> = </span><span class="tk-kw">TRUE</span><span class="tk-pun">;</span></span><span class="code-caret"></span></span>
+                    </div>
+                    <div class="code-result" aria-hidden="true" style="--rs:3.06s">
+                        <div class="result-head"><span>role</span><span>tools</span></div>
+                        <div class="result-row" style="--i:0"><span>Data Engineer</span><span>Snowflake, Databricks, SQL, Spark</span></div>
+                        <div class="result-row" style="--i:1"><span>Analytics Engineer</span><span>Dagster, dbt, Python, Streamlit</span></div>
+                        <div class="result-row" style="--i:2"><span>Developer</span><span>Git, CI/CD, Docker, GitHub Actions</span></div>
+                        <div class="result-foot">3 rows</div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -168,130 +193,140 @@
 
     <section class="about_section section" id='about'>
         <h2 class='section-title'>About Me</h2>
+
         <div class="about_container">
             <div class="about_image">
-                <img src="img/profile-pic.jpeg" alt="Your Name" />
+                <div class="about_photo_frame">
+                    <img src="img/profile-pic.jpeg" alt="Portrait of Shubham Koshti" />
+                </div>
             </div>
 
             <div class="about_content">
-                <!-- Tab Buttons -->
-                <div class="tabs">
-                    <button class="tab-link active" onclick="openTab(event, 'experience')">Professional
-                        Experience</button>
-                    <button class="tab-link" onclick="openTab(event, 'interests')">My Interests</button>
+                <p class="about_intro">
+                    I'm a data professional who wears three hats: I build the pipelines that move data
+                    (<strong>Data Engineer</strong>), shape it into metrics and dashboards people trust
+                    (<strong>Analytics Engineer</strong>), and write the code and automation that keeps it all
+                    running (<strong>Developer</strong>). These days, as a Data Analytics Engineer at Quantegy Analytics,
+                    I own the pipelines, work directly with the people who rely on the data, and make the call on how to
+                    build it. I've designed and built multiple data assets, and I pair solid engineering, backed by a
+                    Master's in Information Systems from Syracuse University, with AI to ship data products quickly.
+                </p>
+
+                <div class="about_stats">
+                    <div class="stat">
+                        <span class="stat-num" data-count="4" data-suffix="+">4+</span>
+                        <span class="stat-label">Years of experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num" data-count="6">6</span>
+                        <span class="stat-label">Pet Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num" data-count="4">4</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
                 </div>
 
-                <!-- Tab Content -->
-                <div id="experience" class="tab-content active">
-                    <!-- <h3>Professional Experience</h3> -->
-                    <p> Hi there! I’m a data enthusiast with over 2 years of experience in turning raw data into
-                        insights that make a real impact. I’m skilled in SQL, Python, and Tableau, and I love building
-                        dashboards and automated models that not only boost productivity but also help drive smart
-                        business decisions. I’m all about diving into data to reveal meaningful insights, crafting
-                        solutions that tackle big challenges, and collaborating with diverse teams to bring out the best
-                        in every project.</p>
+                <div class="about_beyond">
+                    <h3>Beyond work</h3>
+                    <ul class="chips">
+                        <li><i class="fa-solid fa-plane"></i> Travel</li>
+                        <li><i class="fa-solid fa-person-hiking"></i> Hiking</li>
+                        <li><i class="fa-solid fa-book-open"></i> Reading</li>
+                        <li><i class="fa-solid fa-car-side"></i> Road trips</li>
+                        <li><i class="fa-solid fa-table-tennis-paddle-ball"></i> Lawn Tennis</li>
+                        <li><i class="fa-solid fa-futbol"></i> FIFA</li>
+                    </ul>
+                    <p>
+                        Nothing beats a long drive and a great view at the top of a hike. Back indoors, I love reading
+                        about the cosmos and about life on Earth through the lens of evolution. I admire Roger
+                        Federer's elegance on the court, and I like to think I'm pretty good at FIFA. Esports pro is my
+                        backup plan (just kidding!).
+                    </p>
                 </div>
+            </div>
+        </div>
 
-                <div id="interests" class="tab-content">
-                    <!-- <h3>My Interests</h3> -->
-                    <p>I live to travel, especially hiking up to those incredible views at the top. Long drives and
-                        spending time in nature are my favorite ways to unwind. When I’m not out exploring, you’ll
-                        probably find me playing FIFA with friends. I like to think I’m pretty good at it—who knows,
-                        maybe I’ll go pro in esports if I ever get tired of tech (just kidding!). And of course, I love
-                        playing Lawn Tennis. I admire Roger Federer for his elegance on the court—there’s so much to
-                        learn from him!</p>
-                </div>
+        <div class="about_hats">
+            <div class="hat-card reveal" style="--i:0">
+                <div class="hat-icon"><i class="fa-solid fa-database"></i></div>
+                <h3>Data Engineer</h3>
+                <p>Builds and automates the pipelines that move data reliably from source systems into the warehouse.</p>
+            </div>
+            <div class="hat-card reveal" style="--i:1">
+                <div class="hat-icon"><i class="fa-solid fa-chart-column"></i></div>
+                <h3>Analytics Engineer</h3>
+                <p>Models raw data into clean, trusted datasets and dashboards that teams actually use.</p>
+            </div>
+            <div class="hat-card reveal" style="--i:2">
+                <div class="hat-icon"><i class="fa-solid fa-code"></i></div>
+                <h3>Developer</h3>
+                <p>Writes version-controlled code and automates testing and delivery with CI/CD.</p>
             </div>
         </div>
     </section>
 
     <section class="skills-section section" id='skills'>
         <h2 class='section-title'>Skills</h2>
-        <div class="skills">
-            <div class="skill">
-                <i class="fas fa-chart-line"></i>
-                <p>Tableau</p>
+
+        <div class="skill-groups">
+            <div class="skill-group reveal" style="--i:0">
+                <div class="skill-group-head">
+                    <div class="hat-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>Data Engineering</h3>
+                </div>
+                <ul class="skill-tiles">
+                    <li class="skill-tile"><img src="img/skills/snowflake.svg" alt="" loading="lazy"><span>Snowflake</span></li>
+                    <li class="skill-tile"><img src="img/skills/databricks.svg" alt="" loading="lazy"><span>Databricks</span></li>
+                    <li class="skill-tile"><i class="fa-solid fa-database"></i><span>SQL</span></li>
+                    <li class="skill-tile"><img src="img/skills/apachespark.svg" alt="" loading="lazy"><span>Spark</span></li>
+                </ul>
             </div>
-            <div class="skill">
-                <i class="fas fa-database"></i>
-                <p>Azure Databricks</p>
+
+            <div class="skill-group reveal" style="--i:1">
+                <div class="skill-group-head">
+                    <div class="hat-icon"><i class="fa-solid fa-chart-column"></i></div>
+                    <h3>Analytics Engineering</h3>
+                </div>
+                <ul class="skill-tiles">
+                    <li class="skill-tile"><i class="fa-solid fa-diagram-project"></i><span>Dagster</span></li>
+                    <li class="skill-tile"><img src="img/skills/dbt.svg" alt="" loading="lazy"><span>dbt</span></li>
+                    <li class="skill-tile"><img src="img/skills/python.svg" alt="" loading="lazy"><span>Python</span></li>
+                    <li class="skill-tile"><img src="img/skills/streamlit.svg" alt="" loading="lazy"><span>Streamlit</span></li>
+                </ul>
             </div>
-            <div class="skill">
-                <i class="fas fa-project-diagram"></i>
-                <p>Dash Plotly</p>
+
+            <div class="skill-group reveal" style="--i:2">
+                <div class="skill-group-head">
+                    <div class="hat-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Development</h3>
+                </div>
+                <ul class="skill-tiles">
+                    <li class="skill-tile"><img src="img/skills/git.svg" alt="" loading="lazy"><span>Git</span></li>
+                    <li class="skill-tile"><i class="fa-solid fa-arrows-spin"></i><span>CI/CD</span></li>
+                    <li class="skill-tile"><img src="img/skills/docker.svg" alt="" loading="lazy"><span>Docker</span></li>
+                    <li class="skill-tile"><img src="img/skills/githubactions.svg" alt="" loading="lazy"><span>GitHub Actions</span></li>
+                </ul>
             </div>
-            <div class="skill">
-                <i class="fas fa-chart-pie"></i>
-                <p>PowerBI</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-python"></i>
-                <p>Python</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-code"></i>
-                <p>R</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-database"></i>
-                <p>SQL</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-java"></i>
-                <p>Java</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-laptop-code"></i>
-                <p>C++</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-stream"></i>
-                <p>Apache Airflow</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-cogs"></i>
-                <p>ServiceNow</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-cloud"></i>
-                <p>Kubernetes</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-file-excel"></i>
-                <p>Microsoft Excel</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-desktop"></i>
-                <p>MS Office</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-database"></i>
-                <p>Azure Data Studio</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-server"></i>
-                <p>PostgreSQL</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-docker"></i>
-                <p>Docker</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-microsoft"></i>
-                <p>PowerApps</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-aws"></i>
-                <p>AWS (Lambda, EC2, S3)</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-microsoft"></i>
-                <p>Azure</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-cloud"></i>
-                <p>Salesforce CRM</p>
-            </div>
+        </div>
+
+        <div class="skills-also">
+            <h3>Also worked with</h3>
+            <ul class="chips">
+                <li>Apache Airflow</li>
+                <li>Tableau</li>
+                <li>Power BI</li>
+                <li>Dash Plotly</li>
+                <li>Kubernetes</li>
+                <li>AWS (Lambda, EC2, S3)</li>
+                <li>Azure</li>
+                <li>GCP</li>
+                <li>PostgreSQL</li>
+                <li>R</li>
+                <li>Microsoft Excel</li>
+                <li>PowerApps</li>
+                <li>ServiceNow</li>
+            </ul>
         </div>
     </section>
 
@@ -299,243 +334,419 @@
         <h2 class="section-title">My Journey</h2>
 
         <div class="timeline">
-            <!-- Experience 1: iConsult Collaborative -->
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-briefcase"></i>
+
+            <!-- Data Analytics Engineer | Quantegy Analytics (current) -->
+            <div class="timeline-item is-current reveal" style="--i:0">
+                <div class="timeline-meta">
+                    <span class="timeline-date">Mar 2025 &ndash; Present</span>
                 </div>
+                <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
                 <div class="timeline-content">
-                    <h3 class="timeline-date">August 2023 - Present</h3>
-                    <h4>Analytics Engineer | iConsult Collaborative | Syracuse, NY</h4>
+                    <span class="timeline-tag"><span class="pulse-dot"></span> Current</span>
+                    <h4>Data Analytics Engineer</h4>
+                    <p class="timeline-org">Quantegy Analytics</p>
                 </div>
             </div>
 
-            <!-- Education 1: Syracuse University -->
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-graduation-cap"></i>
+            <!-- Analytics Engineer | iConsult Collaborative -->
+            <div class="timeline-item reveal" style="--i:1">
+                <div class="timeline-meta">
+                    <span class="timeline-date">Aug 2023 &ndash; Dec 2024</span>
                 </div>
+                <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
                 <div class="timeline-content">
-                    <h3 class="timeline-date">August 2022 - May 2024</h3>
-                    <h4>Syracuse University | Masters in Information Systems | Syracuse, NY</h4>
+                    <span class="timeline-tag">Work</span>
+                    <h4>Analytics Engineer</h4>
+                    <p class="timeline-org">iConsult Collaborative</p>
+                    <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Syracuse, NY</p>
                 </div>
             </div>
 
-            <!-- Experience 2: Infosys Limited -->
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-briefcase"></i>
+            <!-- Syracuse University -->
+            <div class="timeline-item is-edu reveal" style="--i:2">
+                <div class="timeline-meta">
+                    <span class="timeline-date">Aug 2022 &ndash; May 2024</span>
                 </div>
+                <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
                 <div class="timeline-content">
-                    <h3 class="timeline-date">November 2020 - April 2022</h3>
-                    <h4>Data Analyst | Infosys Limited | Pune, India</h4>
+                    <span class="timeline-tag">Education</span>
+                    <h4>Master's in Information Systems</h4>
+                    <p class="timeline-org">Syracuse University</p>
+                    <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Syracuse, NY</p>
                 </div>
             </div>
 
-            <!-- Experience 3: Northway Motorsports -->
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-briefcase"></i>
+            <!-- Infosys Limited -->
+            <div class="timeline-item reveal" style="--i:3">
+                <div class="timeline-meta">
+                    <span class="timeline-date">Nov 2020 &ndash; Apr 2022</span>
                 </div>
+                <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
                 <div class="timeline-content">
-                    <h3 class="timeline-date">November 2019 - May 2020</h3>
-                    <h4>Data Science Intern | Northway Motorsports | Pune, India</h4>
+                    <span class="timeline-tag">Work</span>
+                    <h4>Data Analyst</h4>
+                    <p class="timeline-org">Infosys Limited</p>
+                    <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Pune, India</p>
                 </div>
             </div>
 
-            <!-- Education 2: Pune University -->
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-school"></i>
+            <!-- Northway Motorsports -->
+            <div class="timeline-item reveal" style="--i:4">
+                <div class="timeline-meta">
+                    <span class="timeline-date">Nov 2019 &ndash; May 2020</span>
                 </div>
+                <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
                 <div class="timeline-content">
-                    <h3 class="timeline-date">August 2016 – May 2020</h3>
-                    <h4>Pune University | Bachelors in Electronics and Telecomm | Pune, India</h4>
+                    <span class="timeline-tag">Internship</span>
+                    <h4>Data Science Intern</h4>
+                    <p class="timeline-org">Northway Motorsports</p>
+                    <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Pune, India</p>
                 </div>
             </div>
+
+            <!-- Pune University -->
+            <div class="timeline-item is-edu reveal" style="--i:5">
+                <div class="timeline-meta">
+                    <span class="timeline-date">Aug 2016 &ndash; May 2020</span>
+                </div>
+                <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                <div class="timeline-content">
+                    <span class="timeline-tag">Education</span>
+                    <h4>Bachelor's in Electronics and Telecomm</h4>
+                    <p class="timeline-org">Pune University</p>
+                    <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Pune, India</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section class="projects-section section" id='projects'>
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title">Pet Projects</h2>
+
+        <div class="project-filters" role="group" aria-label="Filter projects">
+            <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-filter="de" aria-pressed="false">Data Engineering</button>
+            <button type="button" class="filter-btn" data-filter="analytics" aria-pressed="false">Analytics</button>
+            <button type="button" class="filter-btn" data-filter="ml" aria-pressed="false">Machine Learning</button>
+        </div>
+
+        <!-- Featured: FEMA pipeline -->
+        <article class="project-card featured reveal" data-cat="de">
+            <div class="featured-copy">
+                <div class="project-badges">
+                    <span class="project-badge is-accent"><i class="fa-solid fa-star"></i> Featured</span>
+                    <span class="project-badge">Data Engineering</span>
+                </div>
+                <h3 class="project-title">FEMA Disaster Analysis: End-to-End Pipeline</h3>
+                <p class="project-desc">
+                    End-to-end pipeline that pulls three FEMA disaster APIs into Azure Blob Storage on a weekly
+                    schedule, cleans and governs the data in Databricks, and serves it to Tableau dashboards.
+                </p>
+                <p class="project-result">
+                    <span class="result-label">Result</span>
+                    3 APIs, 3 weekly DAGs, millions of records and 3 dashboards, with duplicate-safe loads into
+                    Delta tables.
+                </p>
+                <ul class="project-tags">
+                    <li>Airflow</li>
+                    <li>Docker</li>
+                    <li>Azure Blob Storage</li>
+                    <li>Databricks</li>
+                    <li>PySpark</li>
+                    <li>Delta Lake</li>
+                    <li>Unity Catalog</li>
+                    <li>Tableau</li>
+                </ul>
+                <div class="project-actions">
+                    <a class="project-link" href="https://github.com/shubhamkoshti71/data-pipeline-FEMA-analysis_and_visualization" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <button type="button" class="project-link is-button" data-open-arch>
+                        <i class="fa-solid fa-diagram-project"></i> View architecture
+                    </button>
+                </div>
+            </div>
+
+            <ol class="pipeline" aria-label="FEMA pipeline stages">
+                <li class="pipe-node">
+                    <span class="pipe-icon"><i class="fa-solid fa-cloud-arrow-down"></i></span>
+                    <span class="pipe-text"><strong>OpenFEMA APIs</strong><small>Hazard Mitigation, Public Assistance, Disaster Declaration</small></span>
+                </li>
+                <li class="pipe-link" style="--d:0s" aria-hidden="true"></li>
+                <li class="pipe-node">
+                    <span class="pipe-icon"><img src="img/skills/apacheairflow.svg" alt="" loading="lazy"></span>
+                    <span class="pipe-text"><strong>Apache Airflow</strong><small>3 DAGs, scheduled weekly</small></span>
+                </li>
+                <li class="pipe-link" style="--d:0.5s" aria-hidden="true"></li>
+                <li class="pipe-node">
+                    <span class="pipe-icon"><i class="fa-solid fa-box-archive"></i></span>
+                    <span class="pipe-text"><strong>Azure Blob Storage</strong><small>Central store for raw JSON</small></span>
+                </li>
+                <li class="pipe-link" style="--d:1s" aria-hidden="true"></li>
+                <li class="pipe-node">
+                    <span class="pipe-icon"><img src="img/skills/databricks.svg" alt="" loading="lazy"></span>
+                    <span class="pipe-text"><strong>Databricks</strong><small>PySpark, Delta tables, Unity Catalog</small></span>
+                </li>
+                <li class="pipe-link" data-label="ODBC" style="--d:1.5s" aria-hidden="true"></li>
+                <li class="pipe-node">
+                    <span class="pipe-icon"><img src="img/skills/tableau.svg" alt="" loading="lazy"></span>
+                    <span class="pipe-text"><strong>Tableau</strong><small>3 dashboards: trends, funding, assistance</small></span>
+                </li>
+            </ol>
+        </article>
+
         <div class="projects-grid">
 
-            <div class="project-card">
-                <img src="img/fema_logo.png" alt="Project Image" class="project-image">
-                <h3 class="project-title">FEMA Disaster Analysis: End-to-End Automation</h3>
-                <ul class="project-details">
-                    <li>Extracts, cleans, and transforms data using Apache Airflow, Spark, Databricks and Azure Blob Storage 
-                        Features Tableau dashboards for visualizing disaster trends, funding, and impacts. 
-                        </li>
-                </ul>
-                <div class="tech-icons">
-                    <i class="fab fa-dashcube"></i>
-                    <i class="fab fa-tableau"></i>
+            <!-- Crypto ETL (learning project) -->
+            <article class="project-card reveal" data-cat="de" style="--i:0">
+                <div class="project-thumb">
+                    <img src="img/crypto_etl_tile.png" alt="Extract, Transform, Load steps for the crypto ETL project: Python, Airflow and AWS S3" loading="lazy">
+                    <span class="project-cat">Data Engineering</span>
                 </div>
-                <button class="view-code-btn"><a href="https://github.com/shubhamkoshti71/data-pipeline-FEMA-analysis_and_visualization" target="_blank">View Code</a></button>
-            </div>
-
-            <div class="project-card">
-                <img src="img/gest_diab.png" alt="Project Image" class="project-image">
-                <h3 class="project-title">Gestational Diabetes Early Prediction</h3>
-                <ul class="project-details">
-                    <li>A ML based solution in collaboration with Fetal Life to identify high-risk cases of gestational
-                        diabetes early in pregnancy, enabling timely interventions and significantly improving patient outcomes.</li>
-                </ul>
-                <div class="tech-icons">
-                    <i class="fab fa-dashcube"></i>
-                    <i class="fab fa-tableau"></i>
+                <div class="project-body">
+                    <h3 class="project-title">Crypto ETL with Apache Airflow</h3>
+                    <p class="project-desc">
+                        Built while upskilling on Airflow: a DAG that pulls cryptocurrency data from a URL,
+                        structures it as JSON and stores it in an AWS S3 bucket.
+                    </p>
+                    <p class="project-result">
+                        <span class="result-label">Highlights</span>
+                        Includes a demo DAG using PythonOperator, BashOperator and BranchPythonOperator, with task
+                        dependencies and Gantt-view monitoring.
+                    </p>
+                    <ul class="project-tags">
+                        <li>Python</li>
+                        <li>Airflow</li>
+                        <li>AWS S3</li>
+                        <li>JSON</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/shubhamkoshti71/airflow_etl_project" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
-                <button class="view-code-btn"><a href="https://github.com/shubhamkoshti71/gestational_diabetes_prediction" target="_blank">View Code</a></button>
-            </div>
+            </article>
 
-            <div class="project-card">
-                <img src="img/employee.jpg" alt="Project Image" class="project-image">
-                <h3 class="project-title">Predictive Employee Attrition and Analysis</h3>
-                <ul class="project-details">
-                    <li>Development of a probability model to analyze and predict employee attrition, presenting
-                        findings and recommending strategies to reduce the current attrition rate.</li>
-                </ul>
-                <div class="tech-icons">
-                    <i class="fab fa-python"></i>
-                    <i class="fas fa-car"></i>
+            <!-- Adidas -->
+            <article class="project-card reveal" data-cat="analytics" style="--i:1">
+                <div class="project-thumb">
+                    <img src="img/adidas.png" alt="Tableau dashboards showing Adidas sales and operating profit by region and sales method" loading="lazy">
+                    <span class="project-cat">Analytics</span>
                 </div>
-                <button class="view-code-btn"><a href="https://github.com/shubhamkoshti71/employee_attrition_modelling" target="_blank">View Code</a></button>
-            </div>
-
-            <div class="project-card">
-                <img src="img/adidas.png" alt="Project Image" class="project-image">
-                <h3 class="project-title">Adidas Sales and Profitability Analysis</h3>
-                <ul class="project-details">
-                    <li>This project offers insights into the factors affecting sales performance and operational efficiency for Adidas products, 
-                        particularly focusing on the Northeast region of the United States.</li>
-                    <!-- <li>Offers insights into the factors affecting sales performance and operational efficiency for
-                        Adidas products.</li> -->
-                </ul>
-                <div class="tech-icons">
-                    <i class="fab fa-dashcube"></i>
-                    <i class="fab fa-tableau"></i>
+                <div class="project-body">
+                    <h3 class="project-title">Adidas Sales and Profitability Analysis</h3>
+                    <p class="project-desc">
+                        Interactive Tableau analysis of Adidas sales and operating profit across five US regions,
+                        sales methods and product categories, with a story on the Northeast.
+                    </p>
+                    <p class="project-result">
+                        <span class="result-label">Result</span>
+                        Walmart performs strongly in the Northeast while online sales lag, so I recommended more
+                        Walmart focus and a digital-marketing push.
+                    </p>
+                    <ul class="project-tags">
+                        <li>Tableau</li>
+                        <li>Data Visualization</li>
+                        <li>Business Analytics</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/shubhamkoshti71/adidas_US_sales_profitability_analysis" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
-                <button class="view-code-btn"><a href="https://github.com/shubhamkoshti71/adidas_US_sales_profitability_analysis" target="_blank">View Code</a></button>
-            </div>
+            </article>
 
-
-            <div class="project-card">
-                <img src="img/crypto.png" alt="Project Image" class="project-image">
-                <h3 class="project-title">Cryptocurrency Data Pipeline Automation</h3>
-                <ul class="project-details">
-                    <li>Working demo of automated ETL pipeline for storing cryptocurrency stock data using Apache
-                        Airflow, DAGs and AWS S3 storage.</li>
-                </ul>
-                <div class="tech-icons">
-                    <i class="fab fa-python"></i>
-                    <i class="fab fa-salesforce"></i>
-                    <i class="fab fa-postman"></i>
+            <!-- Environmental monitoring -->
+            <article class="project-card reveal" data-cat="analytics" style="--i:2">
+                <div class="project-thumb">
+                    <img src="img/env_monitoring_tile.png" alt="Temperature, carbon monoxide and humidity sensor signals analysed with Python and SQL" loading="lazy">
+                    <span class="project-cat">Analytics</span>
                 </div>
-                <button class="view-code-btn"><a href="https://github.com/shubhamkoshti71/airflow_etl_project" target="_blank">View Code</a></button>
-            </div>
-
-            <div class="project-card">
-                <img src="img/env_mon.jpg" alt="Project Image" class="project-image">
-                <h3 class="project-title">Environmental Monitoring: Telemetry Data Analysis</h3>
-                <ul class="project-details">
-                    <li>Comprehensive analysis of environmental telemetry data collected from various devices using
-                        Python and SQL.</li>
-                </ul>
-                <div class="tech-icons">
-                    <i class="fab fa-dashcube"></i>
-                    <i class="fab fa-tableau"></i>
+                <div class="project-body">
+                    <h3 class="project-title">Environmental Monitoring: Telemetry Analysis</h3>
+                    <p class="project-desc">
+                        Python and SQL analysis of environmental sensor telemetry (temperature, carbon monoxide and
+                        humidity) across devices.
+                    </p>
+                    <p class="project-result">
+                        <span class="result-label">Highlights</span>
+                        Flags humidity spikes and likely sensor faults, filters outliers beyond 3&sigma;, and tracks
+                        trends with moving averages and cumulative sums.
+                    </p>
+                    <ul class="project-tags">
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Window Functions</li>
+                        <li>Anomaly Detection</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/shubhamkoshti71/environmental_monitoring_telemtry_data_analysis" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
-                <button class="view-code-btn"><a href="https://github.com/shubhamkoshti71/environmental_monitoring_telemtry_data_analysis" target="_blank">View Code</a></button>
-            </div>
+            </article>
 
+            <!-- Gestational diabetes -->
+            <article class="project-card reveal" data-cat="ml" style="--i:3">
+                <div class="project-thumb">
+                    <img src="img/gdm_shap_thumb.png" alt="SHAP chart: OGTT, prediabetes and hemoglobin are the strongest drivers of the gestational diabetes model" loading="lazy">
+                    <span class="project-cat">Machine Learning</span>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Gestational Diabetes Risk Classification</h3>
+                    <p class="project-desc">
+                        Team project with Fetal Life, a Kentucky health-tech startup: ML models that classify
+                        gestational diabetes risk from patient health indicators.
+                    </p>
+                    <p class="project-result">
+                        <span class="result-label">Result</span>
+                        Stacked ensemble reached 97.3% test accuracy on a public 3,525-patient dataset, about 3
+                        points above the published baseline. A neural-network autoencoder reached F1 0.975.
+                    </p>
+                    <ul class="project-tags">
+                        <li>Python</li>
+                        <li>scikit-learn</li>
+                        <li>Stacking Ensemble</li>
+                        <li>Neural Network</li>
+                        <li>SHAP</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/shubhamkoshti71/gestational_diabetes_prediction" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
 
-
-
+            <!-- Employee attrition -->
+            <article class="project-card reveal" data-cat="ml" style="--i:4">
+                <div class="project-thumb">
+                    <img src="img/attrition_tile.png" alt="Key attrition drivers: working hours, job satisfaction and years at company" loading="lazy">
+                    <span class="project-cat">Machine Learning</span>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Predictive Employee Attrition Analysis</h3>
+                    <p class="project-desc">
+                        Modelled employee attrition for a 4,000-person telecom company (about 15% annual turnover)
+                        and recommended data-backed ways to retain staff.
+                    </p>
+                    <p class="project-result">
+                        <span class="result-label">Result</span>
+                        Random Forest reached 96% accuracy (Logistic Regression 78%). Long hours, low satisfaction
+                        and short tenure were the top drivers.
+                    </p>
+                    <ul class="project-tags">
+                        <li>Python</li>
+                        <li>Logistic Regression</li>
+                        <li>Random Forest</li>
+                        <li>Feature Engineering</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/shubhamkoshti71/employee_attrition_modelling" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
 
         </div>
+
+        <div class="projects-more">
+            <a class="btn btn-outline" href="https://github.com/shubhamkoshti71?tab=repositories" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> See all repositories on GitHub
+            </a>
+        </div>
+
+        <dialog class="arch-dialog" id="arch-dialog" aria-label="FEMA pipeline architecture">
+            <div class="arch-inner">
+                <button type="button" class="arch-close" aria-label="Close" data-close>&times;</button>
+                <div class="arch-scroll">
+                    <img src="img/fema_architecture.png" alt="Architecture diagram: OpenFEMA APIs feed an Apache Airflow DAG, data lands in Azure Blob Storage, is processed in Azure Databricks, and is served to Tableau over an ODBC connection.">
+                </div>
+                <p class="arch-note">Architecture diagram from the project repository.</p>
+            </div>
+        </dialog>
     </section>
 
-    <section class="certifiations-section section" id='certifiations'>
+    <section class="certifications-section section" id='certifications'>
         <h2 class="section-title">Certifications</h2>
-        <div class="certifications-grid">
-            <!--    <div class="certification-card">    -->
 
-            <img src="img/databricks_certificate.png" alt="Certification Logo 1" class="certification-image">
+        <div class="cert-grid">
+            <article class="cert-card featured reveal" style="--i:0">
+                <span class="cert-flag"><i class="fa-solid fa-star"></i> Featured</span>
+                <div class="cert-badge">
+                    <img src="img/certs/databricks-data-engineer-associate.png" alt="Databricks Certified Data Engineer Associate badge" loading="lazy">
+                </div>
+                <h3>Certified Data Engineer Associate</h3>
+                <p class="cert-issuer">Databricks</p>
+                <span class="cert-year">2024</span>
+            </article>
 
-            <img src="img/certification-1.png" alt="Certification Logo 2" class="certification-image">
-            <!-- <h3 class="certification-title">Analyzing Healthcare Information via HMO</h3> -->
-            <!--     </div>   -->
-            <!--    <div class="certification-card">    -->
-            <img src="img/certification-2.png" alt="Certification Logo 3" class="certification-image">
-            <!-- <h3 class="certification-title">Data Science with Python</h3> -->
-            <!--    </div>  -->
-            <!--    <div class="certification-card">    -->
-            <img src="img/certification-3.png" alt="Certification Logo 4" class="certification-image">
-            <!-- <h3 class="certification-title">AWS Certified Solutions Architect</h3> -->
-            <!--    </div> -->
-            <!--    <div class="certification-card">    -->
-            <img src="img/certification-4.png" alt="Certification Logo 5" class="certification-image">
-            <!-- <h3 class="certification-title">Google Cloud Professional Data Engineer</h3> -->
-            <!--   </div> -->
+            <article class="cert-card reveal" style="--i:1">
+                <div class="cert-badge">
+                    <img src="img/certs/oci-generative-ai-professional.png" alt="Oracle Cloud Infrastructure Generative AI Professional badge, 2024" loading="lazy">
+                </div>
+                <h3>Generative AI Professional</h3>
+                <p class="cert-issuer">Oracle Cloud Infrastructure</p>
+                <span class="cert-year">2024</span>
+            </article>
+
+            <article class="cert-card reveal" style="--i:2">
+                <div class="cert-badge">
+                    <img src="img/certs/oci-ai-foundations-associate.png" alt="Oracle Cloud Infrastructure AI Certified Foundations Associate badge, 2024" loading="lazy">
+                </div>
+                <h3>AI Certified Foundations Associate</h3>
+                <p class="cert-issuer">Oracle Cloud Infrastructure</p>
+                <span class="cert-year">2024</span>
+            </article>
+
+            <article class="cert-card reveal" style="--i:3">
+                <div class="cert-badge">
+                    <img src="img/certs/microsoft-office-specialist-excel.png" alt="Microsoft Office Specialist Excel badge" loading="lazy">
+                </div>
+                <h3>Office Specialist: Excel</h3>
+                <p class="cert-issuer">Microsoft</p>
+                <span class="cert-year">2023</span>
+            </article>
         </div>
-    </section>
 
-    <section class="contact-section section" id='contact'>
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-card">
-            <div class="contact-details">
-                <div class="contact-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <span>+1 315-952-7490</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>srkoshti98@gmail.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>New York, USA</span>
-                </div>
-                <a href="mailto:srkoshti98@gmail.com" class="contact-btn" target="_blank">Email Me</a>
+        <article class="award-card reveal">
+            <img src="img/certs/syracuse-outstanding-service-award.png" alt="Syracuse University College of Professional Studies Outstanding Service Award badge, iConsult Collaborative" loading="lazy">
+            <div class="award-text">
+                <span class="cert-flag is-award"><i class="fa-solid fa-award"></i> Award</span>
+                <h3>Outstanding Service Award</h3>
+                <p>Syracuse University, College of Professional Studies &middot; iConsult Collaborative</p>
             </div>
-        </div>
-
+        </article>
     </section>
 
-    <section class="pictures-section section">
+    <section class="pictures-section section" id="gallery">
 
-        <h2 class="section-title">Life's Good</h2>
+        <h2 class="section-title">Life's Good!</h2>
 
         <div class="carousel">
             <div class="carousel-track">
                 <!-- First set of images -->
                 <div class="image-card tilt-left">
-                    <img src="img/slider-1.jpeg" alt="Trip Image 1">
+                    <img src="img/slider-6.jpeg" alt="Trip Image 2">
                     <div class="image-description">
-                        <p>First snow in Syracuse, NY</p>
-                        <p>Winter 2022</p>
+                        <p>Tried Kayaking for the first time in my life!</p>
+                        <p>Fall 2026</p>
                     </div>
                 </div>
                 <div class="image-card tilt-right">
-                    <img src="img/slider-2.jpeg" alt="Trip Image 2">
+                    <img src="img/slider-9.jpeg" alt="Trip Image 1">
                     <div class="image-description">
-                        <p>Trek to Whiteface Mountain, NY</p>
-                        <p>Summer 2023</p>
+                        <p>Exploring the streets of Gatlinburg, TN</p>
+                        <p>Summer 2026</p>
                     </div>
                 </div>
                 <div class="image-card tilt-left">
-                    <img src="img/slider-3.jpeg" alt="Trip Image 3">
+                    <img src="img/slider-8.jpeg" alt="Trip Image 2">
                     <div class="image-description">
-                        <p>Tennis session at Drumlins Club, Syracuse</p>
-                        <p>Summer 2023</p>
+                        <p>Trek to Mt. Le Conte, Smoky Mountains National Park</p>
+                        <p>Summer 2026</p>
                     </div>
                 </div>
                 <div class="image-card tilt-right">
-                    <img src="img/slider-4.jpeg" alt="Trip Image 2">
+                    <img src="img/slider-7.jpeg" alt="Trip Image 3">
                     <div class="image-description">
-                        <p>Exploring Southwest USA's stunning parks</p>
-                        <p>Summer 2024</p>
+                        <p>A warm morning in Vinalhaven, an island off the coast of Maine</p>
+                        <p>Fall 2025</p>
                     </div>
                 </div>
                 <div class="image-card tilt-left">
@@ -548,35 +759,35 @@
                 <!-- Add more image cards as needed -->
 
                 <!-- Duplicate the images for infinite scroll effect -->
-                <div class="image-card tilt-right">
-                    <img src="img/slider-1.jpeg" alt="Trip Image 1">
+                <div class="image-card tilt-left">
+                    <img src="img/slider-6.jpeg" alt="Trip Image 2">
                     <div class="image-description">
-                        <p>First snow in Syracuse, NY</p>
-                        <p>Winter 2022</p>
+                        <p>Tried Kayaking for the first time in my life!</p>
+                        <p>Fall 2026</p>
+                    </div>
+                </div>
+                <div class="image-card tilt-right">
+                    <img src="img/slider-9.jpeg" alt="Trip Image 1">
+                    <div class="image-description">
+                        <p>Exploring the streets of Gatlinburg, TN</p>
+                        <p>Summer 2026</p>
                     </div>
                 </div>
                 <div class="image-card tilt-left">
-                    <img src="img/slider-2.jpeg" alt="Trip Image 2">
+                    <img src="img/slider-8.jpeg" alt="Trip Image 2">
                     <div class="image-description">
-                        <p>Trek to Whiteface Mountain, NY</p>
-                        <p>Summer 2023</p>
+                        <p>Trek to Mt. Le Conte, Smoky Mountains National Park</p>
+                        <p>Summer 2026</p>
                     </div>
                 </div>
                 <div class="image-card tilt-right">
-                    <img src="img/slider-3.jpeg" alt="Trip Image 3">
+                    <img src="img/slider-7.jpeg" alt="Trip Image 3">
                     <div class="image-description">
-                        <p>Tennis session at Drumlins Club, Syracuse</p>
-                        <p>Summer 2023</p>
+                        <p>A warm morning in Vinalhaven, an island off the coast of Maine</p>
+                        <p>Fall 2025</p>
                     </div>
                 </div>
                 <div class="image-card tilt-left">
-                    <img src="img/slider-4.jpeg" alt="Trip Image 2">
-                    <div class="image-description">
-                        <p>Exploring Southwest USA's stunning parks</p>
-                        <p>Summer 2024</p>
-                    </div>
-                </div>
-                <div class="image-card tilt-right">
                     <img src="img/slider-5.jpeg" alt="Trip Image 3">
                     <div class="image-description">
                         <p>Trip to the Indian coastal beaches with Familia</p>
@@ -588,6 +799,80 @@
 
 
     </section>
+
+    <section class="contact-section section" id='contact'>
+        <h2 class="section-title">Let's Talk Data</h2>
+
+        <div class="contact-cta reveal">
+            <p class="contact-lead">
+                I do my best work between the business question and the production pipeline: talking to the
+                people who need answers, deciding how to solve it, and then building it. So, what are you
+                trying to figure out?
+            </p>
+
+            <div class="contact-actions">
+                <a class="btn btn-primary" href="mailto:srkoshti98@gmail.com">
+                    <i class="fa-solid fa-envelope"></i> Email me
+                </a>
+                <button type="button" class="btn btn-outline" data-copy-email="srkoshti98@gmail.com">
+                    <i class="fa-regular fa-copy"></i> <span>Copy email</span>
+                </button>
+                <a class="btn btn-outline" href="ShubhamK_Resume.pdf" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-file-arrow-down"></i> Resume
+                </a>
+            </div>
+
+            <ul class="contact-tiles">
+                <li>
+                    <a class="contact-tile" href="mailto:srkoshti98@gmail.com">
+                        <span class="tile-icon"><i class="fa-solid fa-envelope"></i></span>
+                        <span class="tile-text"><small>Email</small>srkoshti98@gmail.com</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="contact-tile" href="https://www.linkedin.com/in/shubham-koshti" target="_blank" rel="noopener">
+                        <span class="tile-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                        <span class="tile-text"><small>LinkedIn</small>in/shubham-koshti</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="contact-tile" href="https://www.github.com/shubhamkoshti71" target="_blank" rel="noopener">
+                        <span class="tile-icon"><i class="fa-brands fa-github"></i></span>
+                        <span class="tile-text"><small>GitHub</small>shubhamkoshti71</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="contact-tile is-static">
+                        <span class="tile-icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <span class="tile-text"><small>Based in</small>New York, USA</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <strong>Shubham Koshti</strong>
+                <span>Data Engineer &middot; Analytics Engineer &middot; Developer</span>
+            </div>
+
+            <ul class="icons footer-icons">
+                <li><a href="https://www.github.com/shubhamkoshti71" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.instagram.com/_shubhamkoshti_" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://x.com/ShubhamKoshti98" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/shubham-koshti" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; <span id="footer-year">2026</span> Shubham Koshti</span>
+            <span class="footer-time"><i class="fa-regular fa-clock"></i> <span id="ny-time">New York</span></span>
+            <a href="#home" class="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+        </div>
+    </footer>
+
 
 </body>
 
